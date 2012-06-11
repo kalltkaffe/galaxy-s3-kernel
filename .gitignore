@@ -1,0 +1,104 @@
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# NOTE! Please use 'git ls-files -i --exclude-standard'
+# command after changing this file, to see if there are
+# any tracked files which get ignored after the change.
+#
+# Normal rules
+#
+.*
+*.o
+*.o.*
+*.a
+*.s
+*.ko
+*.so
+*.so.dbg
+*.mod.c
+*.i
+*.lst
+*.symtypes
+*.order
+*.elf
+*.bin
+*.gz
+*.bz2
+*.lzma
+*.patch
+*.gcno
+*.str.tmp
+modules.builtin
+scripts/
+
+#
+# Top-level generic files
+#
+tags
+TAGS
+vmlinux
+System.map
+Module.markers
+Module.symvers
+!.gitignore
+!.mailmap
+
+#
+# Generated include files
+#
+include/asm
+include/asm-*/asm-offsets.h
+include/config
+include/linux/autoconf.h
+include/linux/compile.h
+include/linux/version.h
+include/linux/utsrelease.h
+include/linux/bounds.h
+include/generated
+
+# stgit generated dirs
+patches-*
+
+# quilt's files
+patches
+series
+
+# cscope files
+cscope.*
+ncscope.*
+
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
+# generated files
+arch/arm/boot/Image
+arch/arm/boot/compressed/lib1funcs.S
+arch/arm/boot/compressed/piggy.gzip
+arch/arm/boot/compressed/vmlinux.lds
+arch/arm/boot/zImage
+arch/arm/kernel/vmlinux.lds
+drivers/tty/vt/consolemap_deftbl.c
+drivers/tty/vt/defkeymap.c
+firmware/SlimISP_GD.bin.gen.S
+firmware/SlimISP_ZD.bin.gen.S
+firmware/tsp_melfas/CORE.fw
+firmware/tsp_melfas/CORE.fw.gen.S
+firmware/tsp_melfas/PRIV.fw
+firmware/tsp_melfas/PRIV.fw.gen.S
+firmware/tsp_melfas/PUBL.fw
+firmware/tsp_melfas/PUBL.fw.gen.S
+kernel/timeconst.h
+lib/crc32table.h
+lib/gen_crc32table
+usr/gen_init_cpio
+usr/initramfs_data.cpio
+
+*.orig
+*~
+\#*#
+
